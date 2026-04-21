@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messaging Suggestion Assistant"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This prototype uses Android accessibility services and an overlay assistant to provide quick writing suggestions while typing in messaging apps."
+            android:textSize="16sp"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:id="@+id/txtStatusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accessibility Service Status"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtServiceStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unknown"
+            android:paddingBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnEnableAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Accessibility Settings" />
+
+        <TextView
+            android:id="@+id/txtToneLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:text="Suggestion Tone"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioToneGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioCasual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual" />
+
+            <RadioButton
+                android:id="@+id/radioPolite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polite" />
+
+            <RadioButton
+                android:id="@+id/radioProfessional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtArtefactLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:text="Processed Artefact ID"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editArtefactId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste artefact ID from web app"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSaveArtefactId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Save Artefact ID" />
+
+        <TextView
+            android:id="@+id/txtArtefactStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="No artefact ID saved" />
+
+    </LinearLayout>
+</ScrollView>
